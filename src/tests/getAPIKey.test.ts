@@ -13,7 +13,7 @@ describe("person", () => {
 
   test("returns null when authorization header is an empty string", () => {
     const headers: IncomingHttpHeaders = { authorization: "" };
-    expect(getAPIKey(headers)).toBeTruthy();
+    expect(getAPIKey(headers)).toBeNull();
   });
 
   test("is active", () => {
